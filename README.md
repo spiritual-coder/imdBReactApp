@@ -12,3 +12,11 @@ an imdB application based on Reactjs
 *Here are the results:*
 
 ![Screenshot](d1.png)
+
+**Note:** *Daily Progress Code Snippets are there in the ExperimentalCode directory.*
+
+###### Any Doubts for the day:
+- I was quite wondering what kind of components to create (class or function) as of now (using useState hooks) both gives quite the same results
+
+Thanks,
+Gaurav
