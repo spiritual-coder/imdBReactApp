@@ -18,5 +18,5 @@ an imdB application based on Reactjs
 ###### Any Doubts for the day:
 - I was quite wondering what kind of components to create (class or function) as of now (using useState hooks) both gives quite the same results
 
-Thanks,
-`Gaurav`
+Thanks
+Gaurav
