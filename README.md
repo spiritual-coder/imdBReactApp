@@ -11,6 +11,12 @@ an imdB application based on Reactjs
 
 *Here are the results:*
 
+#### Sketch
+
+![Sketch](sketch.jpg)
+
+#### Screenshot
+
 ![Screenshot](d1.png)
 
 **Note:** *Daily Progress Code Snippets are there in the ExperimentalCode directory.*
