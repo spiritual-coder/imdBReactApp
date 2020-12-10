@@ -29,4 +29,10 @@ an imdB application based on Reactjs
 
 - Started working on the individual components
 
+#### Screenshot
+
+![Screenshot](navbar.png)
+
+![Screenshot](searchbar.png)
+
 Thanks
