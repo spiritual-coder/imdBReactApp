@@ -35,4 +35,14 @@ an imdB application based on Reactjs
 
 ![Screenshot](searchbar.png)
 
+### Day 3 (10 Dec 2020 - Thursday):
+
+- Added Search functionality
+
+#### Screenshot
+
+![Screenshot](d3a.png)
+
+![Screenshot](d3b.png)
+
 Thanks
