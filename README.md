@@ -45,4 +45,15 @@ an imdB application based on Reactjs
 
 ![Screenshot](d3b.png)
 
+### Day 4 (11 Dec 2020 - Friday):
+
+- Added Top Movies and Mid-Section
+- I was kind of stucked with the implementation of TopMovies part for quite a long time but later solved the problem using {useEffect} Hook and reffering some documentations.
+
+#### Screenshot
+
+![Screenshot](d4a.png)
+
+![Screenshot](d4b.png)
+
 Thanks
