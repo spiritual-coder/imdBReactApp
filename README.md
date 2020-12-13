@@ -56,4 +56,12 @@ an imdB application based on Reactjs
 
 ![Screenshot](d4b.png)
 
+### Day 5 (12 Dec 2020 - Saturday):
+
+#### Screenshot
+
+![Screenshot](tweetcard.png)
+
+![Screenshot](accordian.png)
+
 Thanks
