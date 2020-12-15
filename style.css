@@ -1,0 +1,611 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+html {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    background: #fff; /* #f9c70c Yellow Background*/
+}
+
+/* Container */
+
+
+.container {
+    margin: 0 auto;
+    max-width:100%;
+    padding: 20px;
+    background: #fff;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 40px auto auto auto;
+    border-radius: 24px;
+    grid-template-areas: 
+        "n n n n s"
+        "l a a a s"
+        "l j j j s"
+        "l t t t s";
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2.4rem;
+}
+
+.container > div:nth-child(1n) {
+    background: #fff;
+    /*background-color: #96ceb4; green */
+}
+
+.container > div:nth-child(2n) {
+    background: #ebecf0;
+    /*background-color: #ff6f69; red */
+}
+
+.container > div:nth-child(3n) {
+  background: #fff;
+  /*background-color: #d3d3d3; gray*/
+}
+
+.container > div:nth-child(4n) {
+  background: #fff;
+  /*background-color: #ffcc5c; orange*/
+}
+
+.container > div:nth-child(5n) {
+  background: #fff;
+  /*background-color: #b7e9f7; blue*/ 
+}
+
+.container > div:nth-child(6n) {
+    background: #fff;
+    /*background-color: #ffdbe9; pink*/ 
+}
+
+.navBar {
+    /*grid-column: 1 / -2;*/
+    grid-area: n;
+}
+
+.sideBar {
+    /*grid-row:*/
+    grid-area: s;
+    padding: 10px;
+}
+
+.latestBar {
+    /*grid-row: 2 / -1;*/
+    grid-area: l;
+    padding: 10px;
+}
+
+.searchBar {
+    /*grid-column: 2 / -2;*/
+    grid-area: a;
+}
+
+
+.jumboBar {
+    /*grid-column: 2 / -2;*/
+    grid-area: j;
+}
+
+.topmoviesBar {
+    /*grid-column: 2 / -2;*/
+    grid-area: t;
+}
+
+
+/* NavBar */
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.logo img {
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+h2.navItem {
+    font-size: 1.4rem;
+    color: #000;
+    cursor: pointer;
+    padding: 6px 24px;
+}
+
+i.fa {
+    font-size: 1.1rem;
+    margin-left: 6px;
+}
+
+/* SearchBar */
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 100%;
+}
+
+.explore h1 {
+  font-size: 2.7rem;
+}
+
+.form {
+    display:grid;
+}
+
+.input {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.6rem 3rem;
+    line-height: 2.8rem;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    width: 540px;
+    max-width: 100%;
+    outline: none;
+    background: #ebecf0;
+}
+
+
+.card-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+.card img {
+  display: flex;
+  margin: 10px;
+  width: 195px;
+  height: 322px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* Top Movies */
+
+.topMovies {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topMovies h1 {
+  font-size: 2.4rem;
+}
+
+span.gray {
+  color: gray;
+}
+
+
+/* Jumbo Box*/
+
+
+.jumboBox {
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 100%;
+  display: grid;
+  grid-gap: 10px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 90px 90px;
+    border-radius: 10px;
+    grid-template-areas: 
+        "m m m f f o o v"
+        "m m m s s o o i"
+}
+
+.jumboBox > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.jumboBox > div:nth-child(1n) {
+  background-color: #96ceb4; /*green*/  
+}
+
+.jumboBox > div:nth-child(2n) {
+      background-color: #7f00ff; /*red*/ 
+}
+
+.jumboBox > div:nth-child(3n) {
+  background-color: #fff; /*gray*/ 
+}
+
+.jumboBox > div:nth-child(4n) {
+      background-color: #ffcc5c; /*orange*/ 
+}
+
+.jumboBox > div:nth-child(5n) {
+    background-color: #fff; /*blue*/ 
+}
+
+.jumboBox > div:nth-child(6n) {
+    background-color: #fff; /*pink*/ 
+}
+
+.jumboBox h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.mainvideo {
+  grid-area: m;
+  overflow: hidden;
+}
+
+
+.followus {
+  grid-area: f;
+}
+
+.followus h3 {
+  color: #fff;
+}
+
+.snapshot {
+  grid-area: s;
+  border: 1px solid #ddd;
+}
+
+.othervideo {
+  grid-area: o;
+  overflow: hidden;
+}
+
+.viewall {
+  grid-area: v;
+  border: 1px solid #ddd;
+}
+
+.iMDb {
+  grid-area: i;
+}
+
+.iMDb img {
+  width: 70px;
+  height: 70px;
+}
+
+
+/* Twitter Cards */
+
+.tweetCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin: 60px auto;
+  max-width: 222px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.logoTwitter {
+  border-radius: 50%;
+  background: #ebecf0;
+  padding: 2.4px;
+  margin-bottom: 10px;
+}
+
+
+.logoTwitter img {
+  width: 24px;
+  height: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.header .profile-thumbnail img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.header .profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.profile-name h3 {
+  font-size: 1.3rem;
+}
+
+.profile-name h4 {
+  font-size: 1rem;
+  color: gray;
+}
+
+.header .option {
+  display: flex;
+  align-items: center;
+  margin: 0 4px 0 auto;
+}
+
+.header .option h3 {
+  font-size: 1.6rem;
+}
+
+.header h3, .header h4 {
+  display: flex;
+  margin: 0;
+}
+
+#inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#inner h2 {
+  font-size: 1.4rem;
+  margin: 5px;
+  padding: 0;
+}
+
+#inner p {
+  font-size: 1.2rem;
+  color: gray;
+  margin: 5px;
+  padding: 0;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+#inner img {
+  border-radius: 8px;
+  width: 180px;
+  height: 80px;
+  cursor: pointer;
+}
+
+/* Latest Movies */
+
+
+.accordian {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #18191a;
+  color: #fff;
+  max-width: 276px;
+  margin: 6px auto;
+  padding-top: 8px;
+  border-radius: 18px;
+}
+
+.accor-image img {
+  border-radius: 12px;
+  margin: 0 12px;
+}
+
+.accor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 18px;
+  background: #242526;
+  margin: 15px 0;
+}
+
+.accor .head h2 {
+  text-align: left;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.accor h2 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.head {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  padding: 10px 15px;
+}
+
+.movie-profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.movie-profile .movie-name {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.movie-profile .revenue {
+  color: gray;
+  margin: 0;
+  margin-top: 6px;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.body .rating {
+  color: #f4bc1c;
+  margin: 0 4px 0 auto;
+  font-size: 1.2rem;
+}
+
+.body .body-image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+
+ @media only screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 20% auto;
+    border-radius: 24px;
+    grid-template-areas: 
+        "n n"
+        "a a"
+        "j j"
+        "t t"
+        "l l"
+        "s s";
+    max-width: 100%;
+  }
+
+  .container > div:nth-child(2n) {
+    background: #fff;
+
+}
+
+  .navigation-links {
+    display: none;
+  }
+
+  .logo img {
+    margin-left: 30px;
+  }
+
+  .jumboBox {
+    margin: 10px 15px;
+    
+  }
+
+  .jumboBar {
+    padding: 20px;
+  }
+
+  .card-list {
+    justify-content: center;
+  }
+
+  .card img {
+    width: 225px;
+    height: 360px;
+    margin: 15px;
+  }
+
+  .input {
+    max-width: 80%;
+    margin-left: 15px;
+    font-size: 1.8rem;
+  }
+
+  .accordian {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px;
+    padding: 6px 15px;
+  }
+
+  .accor-image img {
+    display: none;
+  }
+
+  .accor h2 {
+    font-size: 1.8rem;
+  }
+
+  .movie-profile .movie-name {
+    font-size: 1.5rem;
+  }
+
+  .movie-profile .revenue {
+    font-size: 1.4rem;
+  }
+
+  .body .body-image img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .body .rating {
+    font-size: 1.3rem;
+  }
+
+  .topMovies {
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  .topMovies h1 {
+    font-size: 2.7rem;
+    margin: 20px;
+  }
+
+  .explore {
+    margin: 20px 30px;
+  }
+
+  .explore h1 {
+    font-size: 3rem;
+    margin: 20px 10px;
+  }
+
+  .tweetCard {
+    display: none;
+  }
+
+}
