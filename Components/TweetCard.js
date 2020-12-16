@@ -1,6 +1,5 @@
 import React from "react";
-
-export default function TweetCard() {
+function TweetCard({heading, para, imgUrl}) {
 	return (
 		<>
 			<div className="tweetCard">
@@ -23,12 +22,14 @@ export default function TweetCard() {
 				</div>
 
 				<div id="inner">
-					<h2>Which Stars Were Almost in "Game of Thrones"?</h2>
-					<p>Nec semper ut augue gravida rhoncus ligula. Dapibus montes curabitur luctus viverra cubilia.</p>
-					<img className="tweetImg" src="https://images.livemint.com/img/2020/12/10/600x338/2827acf644444de8a0924b16bbd69b01-2827acf644444de8a0924b16bbd69b01-0_1607610653899_1607610694235.jpg" alt="image" />
+					<h2>{heading}</h2>
+					<p>{para}</p>
+					<img className="tweetImg" src={imgUrl} alt="tweetimage" />
 				</div>
 
 			</div>
 		</>
 		)
 }
+
+export default TweetCard;

@@ -27,7 +27,11 @@ export default function SearchBar() {
 					<input className="input" type="text" name="query"
 					placeholder="Find Movies, TV shows, Celebrities and more..."
 					value={query} onChange={(e) => setQuery(e.target.value)} />
+
+					<button className="button" type="submit">Search</button>
 				</form>
+
+
 
 				<div className="card-list">
 					{movies.filter(movie => movie.poster_path).map(movie => (
