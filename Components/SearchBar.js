@@ -1,9 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
 import MovieResults from './MovieResults.js';
 
 export default function SearchBar() {
 	const [query, setQuery] = useState('');
-	const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState([]);
+  const history = useHistory();
+
+  
 
 	const searchMovies = async (e) => {
         e.preventDefault();
@@ -22,22 +26,29 @@ export default function SearchBar() {
 	return (
 		<>
 			<div className="explore">
-				<h1>Explore</h1>
-				<form className="form" onSubmit={searchMovies}>
-					<input className="input" type="text" name="query"
-					placeholder="Find Movies, TV shows, Celebrities and more..."
-					value={query} onChange={(e) => setQuery(e.target.value)} />
+					<h1>Explore</h1>
+				
+					<form className="form" onSubmit={searchMovies} {...history.push(`?=${query}`)}>
 
-					<button className="button" type="submit">Search</button>
-				</form>
+          
+            <input className="input" type="text" name="query"
+						placeholder="Find Movies, TV shows, Celebrities and more..."
+						value={query} onChange={(e) => setQuery(e.target.value)} />
 
+              
+              <button className="button" type="submit">Search</button>
+              
 
+              
+					</form>
+				
 
 				<div className="card-list">
-					{movies.filter(movie => movie.poster_path).map(movie => (
+							{movies.filter(movie => movie.poster_path).map(movie => (
 	                   <MovieResults movie={movie} key={movie.id} />
 	                ))}
 	      </div>
+	      
 			</div>
 		</>
 		)
