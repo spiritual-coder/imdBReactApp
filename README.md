@@ -71,6 +71,6 @@ https://imdb-react-app.netlify.app/
 
 #### Final Updates
 
-![Final Scrrenshot](screenshot.png)
+![Final Screenshot](screenshot.png)
 
 Thanks
