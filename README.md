@@ -68,4 +68,9 @@ https://imdb-react-app.netlify.app/
 
 ![Screenshot](accordian.png)
 
+
+#### Final Updates
+
+![Final Scrrenshot](screenshot.png)
+
 Thanks
