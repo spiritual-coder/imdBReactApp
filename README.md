@@ -82,7 +82,13 @@ Available in the *master* branch
 ![Screenshot](accordian.png)
 
 
-#### Final Updates
+### Final Updates
+
+#### Mock UI Image
+
+![Mock Design](design.jpg)
+
+#### Final Screenshot (of the developed application)
 
 ![Final Screenshot](screenshot.png)
 
