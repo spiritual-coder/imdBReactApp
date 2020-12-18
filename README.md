@@ -1,6 +1,10 @@
 # imdBReactApp
 an imdB application based on Reactjs
 
+### Live on Netlify:
+
+https://imdb-react-app.netlify.app/
+
 ### Day 1 (08 Dec 2020 - Tuesday):
 
 - Today received assignment to create an imdB app based on Reactjs using Components and API calls
