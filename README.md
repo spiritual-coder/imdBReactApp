@@ -5,6 +5,19 @@ an imdB application based on Reactjs
 
 https://imdb-react-app.netlify.app/
 
+### Source Code:
+
+Available in the *master* branch
+
+### Concepts Used:
+
+- React Functional and Class Components
+- React Hooks (useEffect, useState)
+- React Lifecycle Methods (componentDidUpdate)
+- React Router (useHistory, Router)
+- Fetch API (using TMDB API)
+- Custom API
+
 ### Day 1 (08 Dec 2020 - Tuesday):
 
 - Today received assignment to create an imdB app based on Reactjs using Components and API calls
