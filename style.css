@@ -160,12 +160,14 @@ i.fa {
 
 .form {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input {
     font-size: 1.2rem;
     font-weight: bold;
-    padding: 0.6rem 3rem;
+    padding: 1rem 3rem;
     line-height: 2.8rem;
     border-radius: 15px;
     border: 1px solid #ddd;
@@ -179,11 +181,12 @@ i.fa {
 .button {
     background-color: rgba(0,0,0,0.75);
     color: white;
-    margin-left: 12px;
+    margin-left: 15px;
     padding: 1rem 2rem;
     border: 1px solid rgba(0,0,0,0.75);
     border-radius: 20px;
     font-size: 1.4rem;
+    outline: none;
     cursor: pointer;
     transition: background-color 250ms;
 }
